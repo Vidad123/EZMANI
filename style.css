@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f7f9a7; /* Playful Light Yellow Background */
+    font-family: 'Nunito', sans-serif;
+    overflow: hidden; /* Prevents scrollbars when button moves */
+}
+
+.card {
+    text-align: center;
+    background: #fff9e6;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+    max-width: 420px;
+    width: 92%;
+}
+
+.gif {
+    width: 160px;
+    height: auto;
+    margin-bottom: 20px;
+    transform: rotate(-4deg);
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    color: #2b8a3e;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #555;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative; /* Needed for button movement logic */
+    min-height: 56px;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+}
+
+#yes-btn {
+    background-color: #ff8c42;
+    color: white;
+    box-shadow: 0 6px 14px rgba(255, 140, 66, 0.35);
+}
+
+#yes-btn:hover {
+    transform: scale(1.06) rotate(-2deg);
+    background-color: #ff6b1f;
+}
+
+#no-btn {
+    background-color: #77dd77;
+    color: #163f2a;
+    position: relative; /* Allows us to move it with JS */
+}
+
+.hidden {
+    display: none;
+}
